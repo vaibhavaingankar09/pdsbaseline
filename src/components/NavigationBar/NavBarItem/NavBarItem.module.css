@@ -1,0 +1,12 @@
+.NavItem{
+    padding: 10px;
+    text-decoration: none;
+    color: #ccc;
+    background-color: #333333;
+    width: 100%;
+}
+
+.NavItem:hover{
+    background-color: #2580a2;
+    color: #ffffff;
+}
