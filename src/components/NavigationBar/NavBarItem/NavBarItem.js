@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import classes from './NavBarItem.module.css';
 import SubNavBar from '../SubNavigationBar/SubNavigationBar';
