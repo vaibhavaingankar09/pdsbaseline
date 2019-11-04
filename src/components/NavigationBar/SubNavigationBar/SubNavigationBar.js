@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import classes from './SubNavigationBar.module.css';
 
 const subNavItem = (props) => {
     return (
-        <li>
+        <li className={classes.SubMenuItem}>
             <Link to={props.path} >{props.value}</Link>
         </li>
     );

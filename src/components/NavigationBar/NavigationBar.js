@@ -2,57 +2,54 @@ import React from 'react';
 
 import NavBarItem from './NavBarItem/NavBarItem';
 import classes from './NavigationBar.module.css';
+import PrimaryMenu from './PrimaryMenu/PrimaryMenu';
+
 
 const navigationBar = (props) => {
 
+    let primaryMenuItems = [
+            {
+                id: '11',
+                name: 'Home',
+                path: '/'
+            },
+            {
+                id: '12',
+                name: 'Feedback',
+                path: '/feedback'
+            },
+            {
+                id: '13',
+                name: 'Help',
+                path: '/help'
+            },
+            {
+                id: '14',
+                name: 'Demo Version',
+                path: '/demoVersion'
+            },
+            {
+                id: '15',
+                name: 'User Guide',
+                path: '/userGuide'
+            },
+            {
+                id: '16',
+                name: 'SQA Guide',
+                path: '/sqaGuide'
+            },
+            {
+                id: '17',
+                name: 'Metrics Plan Template',
+                path: '/metricsPlanTemplate'
+            },
+            {
+                id: '18',
+                name: 'Logout',
+                path: '/logout'
+            }
+        ];
     let navItems = [
-        {
-            id: '1',
-            name: 'Home',
-            path: '/',
-            submenu: [
-                {
-                    id: '11',
-                    name: 'Home',
-                    path: '/'
-                },
-                {
-                    id: '12',
-                    name: 'Feedback',
-                    path: '/feedback'
-                },
-                {
-                    id: '13',
-                    name: 'Help',
-                    path: '/help'
-                },
-                {
-                    id: '14',
-                    name: 'Demo Version',
-                    path: '/demoVersion'
-                },
-                {
-                    id: '15',
-                    name: 'User Guide',
-                    path: '/userGuide'
-                },
-                {
-                    id: '16',
-                    name: 'SQA Guide',
-                    path: '/sqaGuide'
-                },
-                {
-                    id: '17',
-                    name: 'Metrics Plan Template',
-                    path: '/metricsPlanTemplate'
-                },
-                {
-                    id: '18',
-                    name: 'Logout',
-                    path: '/logout'
-                }
-            ]
-        },
         {
             id: '2',
             name: 'Reports',
@@ -181,13 +178,18 @@ const navigationBar = (props) => {
             ]
         }
     ];
+    console.log(primaryMenuItems)
     return (
-        <div className={classes.NavBar}>
-            <ul>
-                {navItems.map(navItem => (
-                    <NavBarItem key={navItem.id} value={navItem.name} path={navItem.path} submenu={navItem.submenu} />
-                ))}
-            </ul>
+        <div>
+            <PrimaryMenu menuItems={primaryMenuItems} />
+            
+            <div className={classes.NavBar}>
+                <ul className={classes.NavBarItem}>
+                    {navItems.map(navItem => (
+                        <NavBarItem key={navItem.id} value={navItem.name} path={navItem.path} submenu={navItem.submenu} />
+                        ))}
+                </ul>
+            </div>
         </div>
     );
 }

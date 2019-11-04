@@ -1,0 +1,35 @@
+.NavItem{
+    position: relative;
+    width: 190px;
+    text-align: center;
+    color: #ffffff;
+    height: 50px;
+    padding: 7px 0;
+   
+}
+
+.SubMenu{
+    display: none;
+}
+
+.NavItem:hover{
+    background: #2580a2;
+}
+.NavItem:hover .SubMenu{
+    display: block;
+    position: relative;
+    background: #333333;
+    color: #ffffff;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px #343434;
+}
+
+.NavItemList{
+    list-style-type: none;
+    padding-left: 0px;
+ 
+    display: block;
+}
+
+
+

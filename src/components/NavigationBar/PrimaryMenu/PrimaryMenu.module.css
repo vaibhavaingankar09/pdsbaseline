@@ -1,0 +1,51 @@
+.PrimaryMenu{
+    height: 30px;
+    text-align: right;
+    position: relative;
+}    
+.userPrimaryMenu{
+    position: absolute;
+    left: 0;
+}
+                        
+
+.PrimaryMenu ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+}    
+
+.PrimaryMenu ul li{
+    margin-right: 10px;
+    padding-left: 10px;
+}    
+
+.PrimaryMenu ul li a{
+    text-decoration: none;
+    color: #8a8a8a;
+    font-size: 13px;
+}    
+.PrimaryMenu ul li a:hover{
+    color: #272727;
+}    
+
+.AppName{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 15px ;
+}    
+
+.UserName{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 15px;
+}    
+.BaselineReleasePlan{
+    font-size: 13px;
+    text-align: right;
+    padding: 4px 5px;
+}    
+
+.BaselineReleasePlan span{
+    margin-right: 10px;
+}
