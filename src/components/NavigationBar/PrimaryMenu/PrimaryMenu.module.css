@@ -1,51 +1,52 @@
 .PrimaryMenu{
-    height: 30px;
-    text-align: right;
-    position: relative;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }    
 .userPrimaryMenu{
-    position: absolute;
-    left: 0;
-}
-                        
+   padding: 0px 0px;
+}           
 
 .PrimaryMenu ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: inline-flex;
 }    
 
 .PrimaryMenu ul li{
-    margin-right: 10px;
-    padding-left: 10px;
+    padding: 5px 10px;
+    color: #8a8a8a;
 }    
 
 .PrimaryMenu ul li a{
     text-decoration: none;
-    color: #8a8a8a;
-    font-size: 13px;
+    color: inherit;
 }    
-.PrimaryMenu ul li a:hover{
-    color: #272727;
+.PrimaryMenu ul li:hover{
+    color: #141414;
+    background: #eeeeee;
 }    
 
+
 .AppName{
-    font-size: 14px;
     padding-left: 10px;
     padding-right: 15px ;
 }    
 
 .UserName{
-    font-size: 14px;
     font-weight: bold;
-    margin-right: 15px;
+    padding-right: 15px;
 }    
 .BaselineReleasePlan{
-    font-size: 13px;
-    text-align: right;
-    padding: 4px 5px;
+padding: 0px 5px;
 }    
 
 .BaselineReleasePlan span{
-    margin-right: 10px;
+    padding-right: 10px;
+}
+
+*{
+    /* border: 1px solid; */
 }

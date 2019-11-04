@@ -1,0 +1,15 @@
+.MainContainer{
+    font-size: 14px;
+    display: flex;
+}
+
+.Navigator{
+width: 350px;
+border-right: 1px solid #cccccc;
+
+}
+
+.Container{
+    width: 75%;
+}
+
