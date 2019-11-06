@@ -6,10 +6,43 @@
 .Navigator{
 width: 350px;
 border-right: 1px solid #cccccc;
-
+padding: 15px;
+display: flex;
+flex-flow: column;
 }
 
 .Container{
     width: 75%;
 }
 
+*{
+    /* border: 1px solid;   */
+}
+
+#NavForm{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 7px #cccccc;
+}
+
+#NavForm select{
+    width: 200px
+}
+
+.FormItems{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.FormItems label{
+    font-weight: bold;
+    font-size: 12px;
+}
+#FormSubmit{
+    width: 130px;
+    margin: auto;
+}
