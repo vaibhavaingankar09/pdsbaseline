@@ -1,0 +1,35 @@
+.SearchTree{
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 1px 1px 5px #cccccc;
+}
+.SearchTree ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+}
+
+.SearchTree li{
+    padding-left: 10px;
+}
+
+li span:hover{
+    cursor: pointer;
+}
+.ProjectClass:hover{
+    cursor: pointer;
+}
+
+.Folder{
+    width: auto;
+}
+
+.Folder:hover{
+    background-color: #ececec;
+}
+.File:hover{
+    background-color: #ececec;
+}
+
