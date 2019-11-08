@@ -31,7 +31,7 @@ const searchForm = (props) => {
                     <div id={classes.Filter}>Filter & Settings</div>
                     <div className={classes.FormItems}>
                         <label>User</label>
-                        <input type="text" name="user" value={username} />
+                        <input type="text" name="user" value={username} readOnly />
                     </div>
                     <div className={classes.FormItems}>
                         <label>BU Name</label>
